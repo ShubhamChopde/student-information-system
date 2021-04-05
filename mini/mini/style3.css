@@ -1,0 +1,26 @@
+body 
+{
+background-color:green;
+}
+
+table , tr, td
+{
+background-color:green;
+width:1270px;
+height: 25px;
+border:1.5px solid;
+padding:2.5px;
+}
+
+table
+{
+background-color:white;
+}
+
+td:hover {background-color:lightgreen;}
+
+a
+{
+text-decoration:none;
+color:white;
+}

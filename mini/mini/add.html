@@ -1,0 +1,166 @@
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="style2.css"/>
+<script>
+function validation()
+{
+var a=document.frmValidation.name.value.length;
+alert(a);
+var b=document.frmValidation.birth.value.length;
+alert(b);
+var c=document.frmValidation.id.value.length;
+alert(c);
+
+if((a==0)&& (b==0) && (c==0))
+{
+alert("Please Enter Name, Date of Birth, ID Number.");
+return false;
+}
+
+if(a==0)
+{
+alert("Please Enter Name");
+return false;
+}
+
+if(b==0)
+{
+alert("Please Enter Date of Birth");
+return false;
+}
+
+if(c==0)
+{
+alert("Please Enter ID Number");
+return false;
+}
+
+else
+{
+return true;
+}
+
+}
+</script>
+</head>
+<body background="https://localhost/mini/1.png">
+<form name="frmValidation" action="view.php" method="post">
+ 
+<table>
+
+<tr>
+<td>Name:</td>
+<td><input type="text" name="name" onkeypress="return (event.charCode > 64 && 
+	event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"></td>
+</tr>
+
+<tr>
+<td>Father's Name:</td>
+<td><input type="text" name="fname" onkeypress="return (event.charCode > 64 && 
+	event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"></td>
+</tr>
+
+<tr>
+<td>Mother's Name:</td>
+<td><input type="text" name="mname" onkeypress="return (event.charCode > 64 && 
+	event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"></td>
+</tr>
+<tr>
+<td>Gender:</td>
+<td>
+<input type="checkbox" id="gender" name="gender[]" value="Male">
+<label for="male">Male</label>
+<input type="checkbox" id="gender" name="gender[]" value="Female">
+<label for="female">Female</label>
+<input type="checkbox" id="gender" name="gender[]" value="Other">
+<label for="other">Other</label>
+</td>
+</tr>
+
+<tr>
+<td>Date Of Birth:</td>
+<td><input type="date" id="birth" name="birth"></td>
+</tr>
+
+<tr>
+<td>Email Id:</td>
+<td><input type="text" name="email"></td>
+</tr>
+
+<tr>
+<td><label>Select your class:</label></td>
+<td>
+
+<input type="radio" name="class" value="TE-A">TE-A
+<input type="radio" name="class" value="TE-B">TE-B
+<input type="radio" name="class" value="TE-C">TE-C
+</td>
+</tr>
+
+<tr>
+<td>ID No:</td>
+<td><input type="text" name="id"></td>
+</tr>
+
+<tr>
+<td>Roll No:</td>
+<td><input type="text" name="rollno"></td>
+</tr>
+
+<tr>
+<td><label>Select Branch:</label></td>
+<td>
+<input type="radio" name="branch" value="MECHANICAL">MECH
+<input type="radio" name="branch" value="COMPUTER">COMPS
+<input type="radio" name="branch" value="IT">IT
+<input type="radio" name="branch" value="CIVIL">CIVIL
+<input type="radio" name="branch" value="ELECTRONICS">ELECTRONICS<br>
+<input type="radio" name="branch" value="EXTC">EXTC
+<input type="radio" name="branch" value="MECHATRONICS">MTRX
+</td>
+</tr>
+
+<tr>
+<td>10th Marks:</td>
+<td><input type="text" name="ssc"></td>
+</tr>
+
+<tr>
+<td>12th Marks:</td>
+<td><input type="text" name="hsc"></td>
+</tr>
+
+<tr>
+<td>FE Marks:</td>
+<td><input type="text" name="fe"></td>
+</tr>
+
+<tr>
+<td>SE Marks:</td>
+<td><input type="text" name="se"></td>
+</tr>
+
+<tr>
+<td>Address:</td>
+<td>
+<textarea rows="3" cols="50" name="addr"></textarea></td>
+</tr>
+
+<tr>
+<td>Mobile No:</td>
+<td><input type="number" name="mob"></td>
+</tr>
+
+
+<tr>
+<td colspan="2"> 
+<input type="reset" >&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+<input name="submit" type="submit" onclick="return validation()">
+</td>
+</tr>
+</table>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+body
+{
+color:yellow;
+}
+
+h1
+{
+font-family:ALGERIAN;
+text-align:center;
+}
+
+input {
+border: 2px solid #ccc;
+font-size: 1.2rem;
+padding: 4px;
+}
+
+form
+{
+background-color: darkblue;
+margin: 50px auto;
+padding: 20px;
+text-align:center;
+border: 5px solid #ccc;
+height: 200px;
+width: 500px;
+}

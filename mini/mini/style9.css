@@ -1,0 +1,20 @@
+h1
+{
+font-size:40px;
+font-family:ALGERIAN;
+color:yellow;
+}
+
+table ,tr, td
+{
+font-size:30px;
+color:white;
+font-family:Impact;
+background: darkgreen;
+
+}
+
+hr
+{
+border-top: 2px solid red;
+}

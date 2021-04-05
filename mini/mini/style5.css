@@ -1,0 +1,34 @@
+body
+{
+color:white;
+}
+
+table , tr,th, td
+{
+border:1.5px solid;
+}
+
+th 
+{
+background-color:darkblue;
+color:white;
+}
+
+td 
+{
+background-color:#f5f5;
+color:white;
+}
+h1
+{
+font-family:ALGERIAN;
+text-align:center;
+color:yellow;
+}
+
+a
+{
+color:black;
+}
+tr:hover {background-color:blue;}
+th:hover {background-color:lightblue;}

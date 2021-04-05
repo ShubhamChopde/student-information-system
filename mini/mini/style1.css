@@ -1,0 +1,50 @@
+body
+{
+color:white
+text-align:center;
+margin:25px auto;
+padding: 20px;
+border: 5px solid #ccc;
+height : 510px;
+width: 400px;
+background-repeat: repeat;
+background-attachment: fixed;
+ background-position: 100px ;
+}
+
+h1
+{
+  text-align:center;
+  font-family:ALGERIAN;
+  color:black
+}
+img
+{
+  border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 180px;
+  width: 280px; 
+}
+
+p
+{
+text-align:center;
+}
+
+form {
+    margin: 10px auto;
+    padding: 20px;
+    border: 5px solid #ccc;
+    height: 450px;
+    width: 310px;
+    background: #eee;
+}
+
+input {
+    border: 2px solid #ccc;
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 4px;
+}
